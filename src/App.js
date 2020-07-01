@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ListView from "./Components/ListView";
+import TreeView from "./Components/TreeView";
+import TimeLineView from "./Components/TimeLineView";
+import ChartView from "./Components/ChartView";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListView />
+      <TreeView />
+      <TimeLineView />
+      <ChartView />
     </div>
   );
 }
